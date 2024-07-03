@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.jpg">
+    <title>Bookmark</title>
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="text-contain">
+                <h1>Bookmarker</h1>
+            </div>
+            
+        </div>
+    </header>
+    <section id="formSec" class="formSec">
+        <div class="text-container">
+            <h4>
+                <i class='bx bxs-bookmark' ></i>
+            Bookmark your favourite sites
+            <i class='bx bxs-bookmark' ></i>
+        </h4>
+        </div>
+        <form id="form">
+          <div class="alert alert-danger" id="alert" role="alert">
+           
+          </div>
+            <div class="form-group">
+              <label for="exampleInputname"><i class='bx bxs-book-bookmark'></i> Site Name</label>
+              <input type="text" class="form-control" id="exampleInputname"placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputURL"><i class='bx bx-link' ></i> Site URL</label>
+              <input type="text" class="form-control" id="exampleInputURL" placeholder="Enter URL" required>
+            </div>
+            <div class="btn-container">
+                <button type="submit" id="sub" class="btn btn-danger">Submit</button>
+            </div>
+            
+          </form>
+    </section>
+    <section id="storedData" class="storedData">
+        <table class="table"v id="data-table" >
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="table">
+              <tr>
+              </tr>
+              
+            </tbody>
+          </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8ecde;
+}
+
+header{
+    width: 70%;
+    margin:auto;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    border-bottom: 2px #000 dotted;
+}
+.head-container{
+    margin-top: 5rem;
+    text-align: center;
+}
+.text-contain{
+    width:min-content;
+    margin:auto;
+}
+
+header .head-container .text-contain  h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    position: relative;
+    /* background-color: aqua; */
+    z-index: 100000;
+    padding: 0 .5rem;
+}
+
+header .head-container h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #fdd104;
+    z-index: -10;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    transition: all .1s linear;
+  }
+
+
+header .head-container h1:hover {
+cursor: pointer;
+&:after{
+    height: 65%;
+    transition: all .2s linear;
+}
+}
+
+
+/****************section one***************/
+.formSec{
+    width: 70%;
+    margin:auto;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 2px #000 dotted;
+}
+.formSec .text-container{
+    text-align: center;
+}
+
+.formSec .text-container h4{
+    padding: 0 .5rem;
+    position: relative;
+}
+
+h4 { 
+    font-family: Arial, Helvetica, sans-serif; 
+    background:linear-gradient(to right,#5aad6d,#b4be8d,#bab55b); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    font-family: "Bree Serif", serif;
+    font-weight: 500;
+}
+
+/*FORM*/
+form{
+    justify-content:space-between;
+    margin-top: 1.4rem;
+}
+.form-group{
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.btn-container{
+    text-align: center;
+}
+#sub{
+    margin: auto;
+    width: 150px;
+}
+
+.form-group label{
+    margin-bottom: 5px;
+}
+.error{
+    border: 2px red solid;
+}
+.error:focus{
+    border: 2px red solid;
+    box-shadow: 0 1px 5px red ;
+}
+.success{
+    border:2px green solid;
+}
+.success:focus{
+    border: 2px green solid;
+    box-shadow: 0 1px 5px green ;
+}
+
+
+/***sction two****/
+
+.storedData{
+    width: 70%;
+    margin:auto;
+    align-items: center;
+    padding: 2rem;
+}
+
+.storedData th,td{
+    text-align: center;
+}
+
+#visit-btn{
+    background-color: #9aab45;
+    padding: 7px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    color: #fff;
+    justify-content: space-between;
+}
+#visit-btn:hover{
+    background-color: #90a040;
+}
+td button i{
+    margin-right:5px ;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .storedData{
+        width: 100%;
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+.storedData table{
+    width: 80%!important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}    
+
+#visit-btn{
+    width: 70px;
+}
+.btn-danger{
+    width: 95px;
+}
+}
+
+.alert-danger{
+    display: none;
+}
